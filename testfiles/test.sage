@@ -1,4 +1,4 @@
-load('fpMKII.sage')
+load('spmf.sage')
 
 X=BinaryQF(81,1,1)
 Y=BinaryQF(1,0,1)
