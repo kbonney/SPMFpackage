@@ -1,16 +1,18 @@
-#functionPile.py
+# SPMFpackage
+This repository houses a collection of code designed to implement the twisting algorithm proposed in [Twisting of Siegel paramodular forms](https://arxiv.org/abs/1404.4596).
+The core class `SPMF` represents Siegel paramodular forms. Standard vector space operations are implemented for SPMF as well as a method for twisting.
+This repository is only in an alpha stage, so many things are unoptimized or poorly documented. I no longer work on this project, but I can help answer any questions about what is here.
 
-This module is the core of the project. Other files, in general, may be disregarded. There are a number of functions and a single class contained within *functionPile.py*; I will survey the important ones and give loose guidance on how to use them. Note that many of the functions are redundant or unused; they will eventually be removed.
 
-### fundDisc(N) and isFundDisc(N)
+# fundDisc(N) and isFundDisc(N)
 fundDisc(N) takes an integer N and returns a fundamental discriminant dividing it. This is important for calculating Cohen's class number function which is involved in the formula for coefficients of the Siegel Eisenstein series. 
 
 isFundDisc(N) simply tells us if N is already a fundamental discriminant.
 
-### kronecker(a,b) 
+## kronecker(a,b) 
 kronekcer(a,b) calculates the kronecker symbol with a over b. This is used in the formula for coefficients of the Siegel Eisenstein series.
 
-### makeCoeff(a,b,c,k)
+## makeCoeff(a,b,c,k)
 makeCoeff(a,b,c,k) takes a binary quadratic form (a,b,c) and a weight k and returns the coefficient  of the Siegel Eisenstein series of weight k indexed by (a,b,c). The following code block gives an example of the calculation of the coefficient indexed by (1,1,1) for the Siegel Eisenstein series of weight 4.
 ```
 ┌────────────────────────────────────────────────────────────────────┐
